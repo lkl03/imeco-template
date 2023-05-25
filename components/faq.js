@@ -1,57 +1,150 @@
+import Image from "next/image";
 import React from "react";
 import Container from "./container";
-import { Disclosure } from "@headlessui/react";
-import { ChevronUpIcon } from "@heroicons/react/24/solid";
+
+import logoCert1 from "../public/img/logocert-1.png"
+import logoCert2 from "../public/img/logocert-2.png"
+
+import brandLogo1 from "../public/img/brands/logo1.png"
+import brandLogo2 from "../public/img/brands/logo2.png"
+import brandLogo3 from "../public/img/brands/logo3.png"
+import brandLogo4 from "../public/img/brands/logo4.png"
+import brandLogo5 from "../public/img/brands/logo5.png"
+import brandLogo6 from "../public/img/brands/logo6.png"
+import brandLogo7 from "../public/img/brands/logo7.png"
+import brandLogo8 from "../public/img/brands/logo8.png"
+import brandLogo9 from "../public/img/brands/logo9.png"
+import brandLogo10 from "../public/img/brands/logo10.png"
+import brandLogo11 from "../public/img/brands/logo11.png"
 
 const Faq = () => {
   return (
-    <Container className="!p-0">
-      <div className="w-full max-w-2xl p-2 mx-auto rounded-2xl">
-        {faqdata.map((item, index) => (
-          <div key={item.question} className="mb-5">
-            <Disclosure>
-              {({ open }) => (
-                <>
-                  <Disclosure.Button className="flex items-center justify-between w-full px-4 py-4 text-lg text-left text-gray-800 rounded-lg bg-gray-50 hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-indigo-100 focus-visible:ring-opacity-75 dark:bg-trueGray-800 dark:text-gray-200">
-                    <span>{item.question}</span>
-                    <ChevronUpIcon
-                      className={`${
-                        open ? "transform rotate-180" : ""
-                      } w-5 h-5 text-indigo-500`}
-                    />
-                  </Disclosure.Button>
-                  <Disclosure.Panel className="px-4 pt-4 pb-2 text-gray-500 dark:text-gray-300">
-                    {item.answer}
-                  </Disclosure.Panel>
-                </>
-              )}
-            </Disclosure>
+    <Container className="!pt-0">
+          <div className="flex flex-wrap justify-center md:gap-10 gap-5 md:justify-center md:items-end">
+            <div className="pt-2 text-gray-400 dark:text-gray-400">
+              <Image
+                src={brandLogo1}
+                width="200"
+                height="auto"
+                className={"object-cover"}
+                alt="Cert-1"
+                loading="eager"
+                placeholder="blur"
+              />
+            </div>
+            <div className="text-gray-400 dark:text-gray-400">
+              <Image
+                src={brandLogo2}
+                width="200"
+                height="auto"
+                className={"object-cover"}
+                alt="Cert-2"
+                loading="eager"
+                placeholder="blur"
+              />
+            </div>
+            <div className="text-gray-400 dark:text-gray-400">
+              <Image
+                src={brandLogo3}
+                width="200"
+                height="auto"
+                className={"object-cover"}
+                alt="Cert-2"
+                loading="eager"
+                placeholder="blur"
+              />
+            </div>
+            <div className="text-gray-400 dark:text-gray-400">
+              <Image
+                src={brandLogo4}
+                width="200"
+                height="auto"
+                className={"object-cover"}
+                alt="Cert-2"
+                loading="eager"
+                placeholder="blur"
+              />
+            </div>
+            <div className="text-gray-400 dark:text-gray-400">
+              <Image
+                src={brandLogo5}
+                width="200"
+                height="auto"
+                className={"object-cover"}
+                alt="Cert-2"
+                loading="eager"
+                placeholder="blur"
+              />
+            </div>
+            <div className="text-gray-400 dark:text-gray-400">
+              <Image
+                src={brandLogo6}
+                width="200"
+                height="auto"
+                className={"object-cover"}
+                alt="Cert-2"
+                loading="eager"
+                placeholder="blur"
+              />
+            </div>
+            <div className="text-gray-400 dark:text-gray-400">
+              <Image
+                src={brandLogo7}
+                width="200"
+                height="auto"
+                className={"object-cover"}
+                alt="Cert-2"
+                loading="eager"
+                placeholder="blur"
+              />
+            </div>
+            <div className="text-gray-400 dark:text-gray-400">
+              <Image
+                src={brandLogo8}
+                width="200"
+                height="auto"
+                className={"object-cover"}
+                alt="Cert-2"
+                loading="eager"
+                placeholder="blur"
+              />
+            </div>
+            <div className="text-gray-400 dark:text-gray-400">
+              <Image
+                src={brandLogo9}
+                width="200"
+                height="auto"
+                className={"object-cover"}
+                alt="Cert-2"
+                loading="eager"
+                placeholder="blur"
+              />
+            </div>
+            <div className="text-gray-400 dark:text-gray-400">
+              <Image
+                src={brandLogo10}
+                width="200"
+                height="auto"
+                className={"object-cover"}
+                alt="Cert-2"
+                loading="eager"
+                placeholder="blur"
+              />
+            </div>
+            <div className="text-gray-400 dark:text-gray-400">
+              <Image
+                src={brandLogo11}
+                width="200"
+                height="auto"
+                className={"object-cover"}
+                alt="Cert-2"
+                loading="eager"
+                placeholder="blur"
+              />
+            </div>
           </div>
-        ))}
-      </div>
     </Container>
   );
 }
-
-const faqdata = [
-  {
-    question: "Is this template completely free to use?",
-    answer: "Yes, this template is completely free to use.",
-  },
-  {
-    question: "Can I use it in a commercial project?",
-    answer: "Yes, this you can.",
-  },
-  {
-    question: "What is your refund policy? ",
-    answer:
-      "If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked.",
-  },
-  {
-    question: "Do you offer technical support? ",
-    answer:
-      "No, we don't offer technical support for free downloads. Please purchase a support plan to get 6 months of support.",
-  },
-];
 
 export default Faq;
